@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="En">
+    <head>
+        <title>GRANDSTAND.register</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+        <link href="./libs/fontawesomepro/css/all.min.css" rel="stylesheet">
+        <link href="./css/home.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+         <div class="popup" id="popup">
+            <i class="fal fa-times close" onclick="closePopup()"></i>
+            <h2>LOGIN</h2>
+            <form action="#" class="form2">
+                <div class="form-group2">
+                    <label >Username</label>
+                    <input type="text" placeholder="Enter Username" class="form-control2">
+                </div>
+                <div class="form-group2">
+                    <label>Email</label>
+                    <input type="text" placeholder="Enter your Email"  class="form-control2">
+                </div>
+                <div class="form-group2">
+                    <label >Password</label>
+                    <input type="password" placeholder="Enter your Password"  class="form-control2">
+                </div>
+                <button class="btn-6">LOGIN</button>
+                <a href="#" class="forgot-pass">Forgot Password?</a>
+                <span>Not a Member?</span>
+                <a href="#" class="signup">Signup</a>
+            </form>
+            
+           
+
+        </div>
+
+        <script>
+            let popup=document.getElementById("popup");
+            function openPopup()
+            {
+                popup.classList.add("open-popup");
+            }
+            function closePopup()
+            {
+                popup.classList.remove("open-popup")
+            }
+            function myalert()
+		    {
+			alert("Thank you!!");
+		    }
+        </script>
+    
+
+
+    <nav>
+        <img src="./img/companylogoremoved.png" alt="" class="navlogo">
+        
+        <form style="display: inline" action="./home.html" method="get">
+            <button>Home</button>
+          </form>
+        <form style="display: inline" action="./contact.html" method="get">
+            <button>Contact Us</button>
+          </form>
+          <form style="display: inline" action="./about.html" method="get">
+            <button>About Us</button>
+          </form>
+          <form style="display: inline" action="./register.html" method="get">
+            <button>Register</button>
+          </form>
+          <form style="display: inline" action="./FAQ.html" method="get">
+            <button>FAQ</button>
+          </form>
+          <form style="display: inline" action="./drivers.html" method="get">
+            <button>Drivers</button>
+          </form>
+        <button type="submit" class="btn-3" onclick="openPopup()"><i class="fal fa-user usericon" ></i></button>
+   </nav>
+
+       <div class="register">
+         <div class="l-register">
+            <h2>REGISTER HERE</h2>
+            <input type="text" class="reg-item" placeholder="FirstName">
+            <input type="text" placeholder="LastName"><br><br>
+            <input type="email" class="form-control" placeholder="Email"><br>
+            <select name="stage"  id="stage">
+                <option value="">Choose the stage</option>
+                <option value="">Special Stage</option>
+                <option value="">Super Special Stage</option>
+                <option value="">Power Stage</option>
+            </select><br>
+            <input type="text" class="form-control"  placeholder="Set Password"><br>
+            <input type="password" class="form-control"  placeholder="Confirm Password"><br>
+          <p>By Registering to the GRANDSTAND.ltd,<br>
+                Do you accept the terms and conditons?</p>
+                <a href="#">Terms and Conditions</a>  <input type="checkbox"><br>
+                <button onclick="myalert()" class="btn-5">REGISTER</button>
+         </div>
+         <div class="r-column">
+            <img src="./img/register-img.jpg" class="reg-img" alt="">
+        </div> 
+        <section class="out-column">
+            <h1>First Stage of the race</h1>
+            <p>The first stage aka A special stage (SS) is a section of closed road at a stage rallying event used for timed speed tests. Racers attempt to complete the stage in the shortest time. A race on a special stage is coordinated such that each competing racer begins after a set interval, to reduce the chance of impedance by other competitors. Each special stage is a relatively short section, usually up to about 30 miles in length. A rally usually comprises approximately 15–30 special stages. The driver with the lowest overall time for all special stages in an event is the winner.</p><br>
+            <h1>Second Stage of the rally</h1>
+            <p>super special stages are when the ordinary running of a special stage differs to the character of the rally. There are many potential reasons why and the supplementary regulations for a stage rally must explain for the competitors to understand.[1] Typical examples include where:
+
+                there is a change in surface type such as an asphalt stage on a gravel rally
+                two cars start simultaneously at different points of a looped stage in a head-to-head format
+                the running order of competitors may be altered for promotional or spectator purposes
+                the starting intervals are irregular</p><br>
+            <h1>Third Stage of the rally</h1>
+            <p>The Power Stage (abbreviated as PS) is a special stage that usually runs as the final stage of a rally in the World Rally Championship (WRC).[a] Additional championship points are available to the fastest five crews through the stage regardless of where they actually finished in the rally.[2] Unlike normal special stages, which are timed to a tenth of a second, the timing of the Power Stage is to a thousandth of a second.[3]
+
+            </p>
+        </section> 
+        </div>
+        <footer class="footer1">
+            <h2>© Grand Stand 2022</h2>
+            <p>
+                A place where your dream races are happened.<br>
+                Follow us on Social Media to keep updated.<br>
+            </p>
+    
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+           
+         </footer>
+    
+    </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="En">
+    <head>
+        <title>Grandstand.Drivers</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+        <link href="./libs/fontawesomepro/css/all.min.css" rel="stylesheet">
+        <link href="./css/home.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="popup" id="popup">
+            <i class="fal fa-times close" onclick="closePopup()"></i>
+            <h2>LOGIN</h2>
+            <form action="#" class="form2">
+                <div class="form-group2">
+                    <label>Username</label>
+                    <input type="text" placeholder="Enter Username" class="form-control2">
+                </div>
+                <div class="form-group2">
+                    <label>Email</label>
+                    <input type="text" placeholder="Enter your Email"  class="form-control2">
+                </div>
+                <div class="form-group2">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your Password"  class="form-control2">
+                </div>
+                <button class="btn-6">LOGIN</button>
+                <a href="#" class="forgot-pass">Forgot Password?</a>
+                <span>Not a Member?</span>
+                <a href="#" class="signup">Signup</a>
+            </form>
+            
+           
+
+        </div>
+
+        <script>
+            let popup=document.getElementById("popup");
+            function openPopup()
+            {
+                popup.classList.add("open-popup");
+            }
+            function closePopup()
+            {
+                popup.classList.remove("open-popup")
+            }
+        </script>
+    
+
+    <nav>
+        <img src="./img/companylogoremoved.png" alt="" class="navlogo">
+        
+        <form style="display: inline" action="./home.html" method="get">
+            <button>Home</button>
+          </form>
+        <form style="display: inline" action="./contact.html" method="get">
+            <button>Contact Us</button>
+          </form>
+          <form style="display: inline" action="./about.html" method="get">
+            <button>About Us</button>
+          </form>
+          <form style="display: inline" action="./register.html" method="get">
+            <button>Register</button>
+          </form>
+          <form style="display: inline" action="./FAQ.html" method="get">
+            <button>FAQ</button>
+          </form>
+          <form style="display: inline" action="./drivers.html" method="get">
+            <button>Drivers</button>
+          </form>
+        <button type="submit" class="btn-3" onclick="openPopup()"><i class="fal fa-user usericon" ></i></button>
+   </nav>
+
+   <div class="container-drivers">
+    <div class="box">
+        <div class="imgBx">
+            <img src="./img/Kenblock.jpg" alt="">
+        </div>
+        <div class="content2">
+            <div>
+                <h2>Ken Block</h2>
+                <p>
+                    Kenneth Paul Block (born November 21, 1967) is<br> a professional rally driver with the Hoonigan Racing Division,
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="imgBx">
+            <img src="./img/ColinMcRae.jpg" alt="">
+        </div>
+        <div class="content2">
+            <div>
+                <h2>Colin Mc Rae</h2>
+                <p>
+                    Colin Steele McRae was a British rally driver from Scotland.
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="imgBx">
+            <img src="./img/Sebastien.jpg" alt="">
+        </div>
+        <div class="content2">
+            <div>
+                <h2>Sebastien</h2>
+                <p>
+                    Sébastien Ogier (born 17 December 1983) is <br> a French rally driver, competing for the Toyota Gazoo Racing Team in the World Rally Championship (WRC)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="imgBx">
+            <img src="./img/JariMatti.jpg" alt="">
+        </div>
+        <div class="content2">
+            <div>
+                <h2>Jari Matti</h2>
+                <p>
+                    Jari-Matti Latvala (born 3 April 1985) is a Finnish rally driver who has competed in the World Rally Championship (WRC). 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <footer class="footer1-FAQ">
+        <h2>© Grand Stand 2022</h2>
+        <p>
+            A place where your dream races are happened.<br>
+            Follow us on Social Media to keep updated.<br>
+        </p>
+
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+
+     </footer>
+
+  
+
+    </body>
+</html>

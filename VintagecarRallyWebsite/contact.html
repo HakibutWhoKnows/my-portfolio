@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="En">
+    <head>
+        <title>GrandStand.Contact</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+        <link href="./libs/fontawesomepro/css/all.min.css" rel="stylesheet">
+        <link href="./css/home.css" rel="stylesheet" type="text/css">
+        
+    </head>
+    <body>
+
+        <div class="popup" id="popup">
+            <i class="fal fa-times close" onclick="closePopup()"></i>
+            <h2>LOGIN</h2>
+            <form action="#" class="form2">
+                <div class="form-group2">
+                    <label>Username</label>
+                    <input type="text" placeholder="Enter Username" class="form-control2">
+                </div>
+                <div class="form-group2">
+                    <label>Email</label>
+                    <input type="text" placeholder="Enter your Email"  class="form-control2">
+                </div>
+                <div class="form-group2">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your Password"  class="form-control2">
+                </div>
+                <button class="btn-6">LOGIN</button>
+                <a href="#" class="forgot-pass">Forgot Password?</a>
+                <span>Not a Member?</span>
+                <a href="#" class="signup">Signup</a>
+            </form>
+            
+           
+
+        </div>
+
+        <script>
+            let popup=document.getElementById("popup");
+            function openPopup()
+            {
+                popup.classList.add("open-popup");
+            }
+            function closePopup()
+            {
+                popup.classList.remove("open-popup")
+            }
+            function myalert()
+		    {
+			alert("Thank you!!");
+		    }
+        </script>
+    
+
+    <nav>
+        <img src="./img/companylogoremoved.png" alt="" class="navlogo">
+        
+        <form style="display: inline" action="./home.html" method="get">
+            <button>Home</button>
+          </form>
+        <form style="display: inline" action="./contact.html" method="get">
+            <button>Contact Us</button>
+          </form>
+          <form style="display: inline" action="./about.html" method="get">
+            <button>About Us</button>
+          </form>
+          <form style="display: inline" action="./register.html" method="get">
+            <button>Register</button>
+          </form>
+          <form style="display: inline" action="./FAQ.html" method="get">
+            <button>FAQ</button>
+          </form>
+          <form style="display: inline" action="./drivers.html" method="get">
+            <button>Drivers</button>
+          </form>
+        <button type="submit" class="btn-3" onclick="openPopup()"><i class="fal fa-user usericon" ></i></button>
+   </nav>
+
+       <div class="container2">
+            <h2>Contact Us</h2>
+                <form action="#" class="form">
+                    <div class="form-group">
+                        <label >FirstName</label>
+                        <input type="text" placeholder="Enter Your Firstname" 
+                        class="form-control" autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label >Lastname</label>
+                        <input type="text" placeholder="Enter Your Lastname"  class="form-control" autocomplete="on">
+                    </div>
+
+                    <div class="form-group">
+                        <label >Email</label>
+                        <input type="text" placeholder="Enter Your Email"  class="form-control" autocomplete="on">
+                    </div>
+
+                    <div class="form-group">
+                        <label >Message</label>
+                        <textarea cols="50" rows="5" class="form-control" placeholder="Send us message"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label >Where are you from?</label>
+                        <select>
+                            <option value="">Choose your country</option>
+                            <option value="">UK</option>
+                            <option value="">Netherland</option>
+                            <option value="">Finland</option>
+                            <option value="">Others</option>
+                        </select>
+                    </div>
+
+                    <button class="btn-5" onclick="myalert()">Send</button>
+                </form>
+       </div>
+
+       <footer class="footer1">
+        <h2>© Grand Stand 2022</h2>
+        <p>
+            A place where your dream races are happened.<br>
+            Follow us on Social Media to keep updated.<br>
+        </p>
+
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+     </footer>
+    </body>
+</html>
